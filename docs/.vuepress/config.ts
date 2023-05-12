@@ -7,7 +7,7 @@ import head from "./configs/head";
 console.log(sidebar);
 
 export default defineUserConfig({
-  base: "/vuepress2/",
+  base: "/",
   lang: "zh-CN",
   title: "HokageYeah",
   description: "这是我的第一个 VuePress 站点",

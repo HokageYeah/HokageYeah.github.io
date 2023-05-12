@@ -8,7 +8,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "build": "vuepress build docs",
-    "deploy": "cd bin && sh deploy.sh && cd .."
+    "deploy": "cd bin && sh deploy.sh && cd ..",
+    "start": "cd bin && sh start.sh && cd .."
   },
   "author": "hokageyeah",
   "license": "ISC",

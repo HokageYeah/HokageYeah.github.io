@@ -3,7 +3,7 @@ set -e
 
 # 执行打包命令镜像 pnpm/npm/yarn
 build_source=pnpm
-build_command=dev
+build_command=docs:dev
 
 
 
