@@ -16,6 +16,15 @@
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.62",
     "vue": "^3.3.1",
-    "vuepress": "2.0.0-beta.62"
+    "vuepress": "2.0.0-beta.62",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.61",
+    "@vuepress/plugin-search": "2.0.0-beta.61",
+    "vuepress-plugin-comment2": "2.0.0-beta.207",
+    "vuepress-plugin-copy-code2": "2.0.0-beta.207",
+    "vuepress-plugin-reading-time2": "2.0.0-beta.207"
+  },
+  "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.4.15",
+    "@vuepress/theme-default": "2.0.0-beta.61"
   }
 }

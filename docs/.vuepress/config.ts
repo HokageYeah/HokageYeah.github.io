@@ -2,6 +2,9 @@ import { defaultTheme, defineUserConfig } from "vuepress";
 import sidebar from "./configs/sidebar";
 import navbar from "./configs/nabbar";
 import head from "./configs/head";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { copyCodePlugin } from "vuepress-plugin-copy-code2";
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 // debugger;
 console.log(sidebar);
@@ -26,8 +29,8 @@ export default defineUserConfig({
         sidebar,
         // page meta
         editLinkText: "在github上编辑此页",
-        lastUpdatedText: '上次更新',
-        contributorsText: '贡献者',
+        lastUpdatedText: "上次更新",
+        contributorsText: "贡献者",
       },
     },
     // // 默认主题配置
@@ -55,4 +58,37 @@ export default defineUserConfig({
     //   },
     // ],
   }),
+  plugins: [
+    // searchPlugin({
+    //   locales: {
+    //     "/": {
+    //       placeholder: "搜索内容",
+    //     },
+    //   },
+    // }),
+    // 基于 github Dissicon 的评论项目 giscus
+    // https://plugin-comment2.vuejs.press/
+    // https://giscus.app/zh-CN
+    // commentPlugin({
+    //   provider: "Giscus",
+    //   repo: "HokageYeah/blog-giscus-comment",
+    //   repoId: "R_kgDOJADaHw", // id
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOJADaH84CUUwQ", // id
+    //   mapping: "pathname", // url
+    //   lazyLoading: true,
+    //   reactionsEnabled: true,
+    //   inputPosition: "bottom",
+    // }),
+
+    // 代码复制
+    // copyCodePlugin({
+    //   locales: {
+    //     "/": {
+    //       copied: "copy success!",
+    //       copy: "click copy",
+    //     },
+    //   },
+    // }),
+  ],
 });
