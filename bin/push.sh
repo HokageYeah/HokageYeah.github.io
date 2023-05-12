@@ -10,15 +10,19 @@ log=$path/$source-error.log
 
 
 # 项目发布域名
-web_url='https://wuxin0011.github.io'
+web_url='https://wuxin0011.github.io/vuepress2/'
 # 上传消息
 git_message="deploy $web_url"
-# 判断是否有输入消息参数
-if [ -n "$1" ]
-then
-    git_message=$1
-fi
 
+message_params=$1
+
+# 判断是否有输入消息参数
+message_check(){
+    if [ -n "$message_params" ]
+    then
+       git_message=$message_params
+    fi
+}
 
 log_check(){
     # 判断日志路径是否存在
@@ -43,6 +47,7 @@ exec_project(){
 }
 
 
+message_check $1
 log_check
 
 

@@ -12,9 +12,9 @@ build_command=build
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 
 # 项目发布域名
-web_url=https://HokageYeah.github.io
+web_url=https://HokageYeah.github.io/vuepress2/
 # 项目git 地址
-git_source=https://github.com/HokageYeah
+git_source=https://github.com/HokageYeah/vuepress2
 # 上传分支，如果是 master 请使用 main_branch=master
 main_branch=main
 # 项目打包生成的上传分支
@@ -24,16 +24,21 @@ git_message="deploy $web_url"
 
 
 
+
+
+
 # 日志
 path="$(pwd)/log"
 log=$path/$source-error.log
+message_params=$1
 
-
-# 判断是否有输入消息参数
-if [ -n "$1" ]
-then
-   git_message=$1
-fi
+message_check(){
+    # 判断是否有输入消息参数
+   if [ -n "$message_params" ]
+   then
+      git_message=$message_params
+   fi
+}
 
 log_check(){
     # 判断日志路径是否存在
@@ -58,31 +63,32 @@ exec_project(){
  
    # 发布到主分支的消息
    git add -A  2>>$log
-   git commit -m "$git_message"  2>>$log
-   git push -f "$git_source" "$main_branch"  2>>$log
+   git commit -m "$git_message"
+   git push -f "$git_source" "$main_branch"
    echo "主分支推送成功！进入项目打包目录 🍖"
 
    # 进入生成的文件夹
    cd $dist_path
-   echo "当前文件夹 $(pwd)"
+   echo "当前工作文件夹 $(pwd)"
 
    # 如果是发布到自定义域名
    # echo 'www.example.com' > CNAME
-   git init  2>>$log
-   git add -A  2>>$log
-   git commit -m "$git_message" 2>>$log
+   git init
+   git add -A
+   git commit -m "$git_message"
    git push -f "$git_source" "$main_branch:$pages_branch" 2>>$log
 
    echo "正在清理打包文件！🧹"
-   rm -rf $dist_path  2>>$log
+   rm -rf $dist_path
    cd -
 
-   echo "项目成功发布!"
+   echo "项目成功发布!，点击链接可访问！"
    echo "$web_url"
 }
 
 
 log_check
+message_check
 
 # 判断当前路径是bin目录还是项目目录
 if [[ "$0" == "$source.sh" || "$0" == "./$source.sh" ]]
