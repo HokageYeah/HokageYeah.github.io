@@ -16,6 +16,7 @@ web_url=https://HokageYeah.github.io
 # 项目git 地址
 git_source=https://github.com/HokageYeah/HokageYeah.github.io.git
 # 上传分支，如果是 master 请使用 main_branch=master
+
 main_branch=master
 # 项目打包生成的上传分支
 pages_branch=gh-pages
