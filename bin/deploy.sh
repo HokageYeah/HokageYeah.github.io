@@ -12,9 +12,9 @@ build_command=build
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 
 # 项目发布域名
-web_url=https://HokageYeah.github.io/vuepress2/
+web_url=https://HokageYeah.github.io
 # 项目git 地址
-git_source=https://github.com/HokageYeah/vuepress2
+git_source=https://github.com/HokageYeah
 # 上传分支，如果是 master 请使用 main_branch=master
 main_branch=main
 # 项目打包生成的上传分支
