@@ -17,7 +17,7 @@ export default defineUserConfig({
   head: head,
   theme: defaultTheme({
     logo: "/logo/logo.jpg",
-    repo: "HokageYeah/vuepress-theme",
+    repo: "HokageYeah",
     docsBranch: "main",
     docsDir: "docs",
 
