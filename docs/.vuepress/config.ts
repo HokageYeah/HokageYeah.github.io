@@ -14,6 +14,13 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "HokageYeah",
   description: "这是我的第一个 VuePress 站点",
+  locales: {
+    "/": {
+      // lang: 'zh-CN',
+      title: "HokageYeah的笔记",
+      description: "懂得越多，懂得越少",
+    },
+  },
   head: head,
   theme: defaultTheme({
     logo: "/logo/logo.jpg",
