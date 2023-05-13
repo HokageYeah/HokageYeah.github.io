@@ -59,36 +59,36 @@ export default defineUserConfig({
     // ],
   }),
   plugins: [
-    // searchPlugin({
-    //   locales: {
-    //     "/": {
-    //       placeholder: "搜索内容",
-    //     },
-    //   },
-    // }),
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "搜索内容",
+        },
+      },
+    }),
     // 基于 github Dissicon 的评论项目 giscus
     // https://plugin-comment2.vuejs.press/
     // https://giscus.app/zh-CN
-    // commentPlugin({
-    //   provider: "Giscus",
-    //   repo: "HokageYeah/blog-giscus-comment",
-    //   repoId: "R_kgDOJADaHw", // id
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOJADaH84CUUwQ", // id
-    //   mapping: "pathname", // url
-    //   lazyLoading: true,
-    //   reactionsEnabled: true,
-    //   inputPosition: "bottom",
-    // }),
+    commentPlugin({
+      provider: "Giscus",
+      repo: "HokageYeah/HokageYeah.github.io",
+      repoId: "R_kgDOJiEJFA", // id
+      category: "Announcements",
+      categoryId: "DIC_kwDOJiEJFM4CWdHm", // id
+      mapping: "pathname", // url
+      lazyLoading: true,
+      reactionsEnabled: true,
+      inputPosition: "bottom",
+    }),
 
     // 代码复制
-    // copyCodePlugin({
-    //   locales: {
-    //     "/": {
-    //       copied: "copy success!",
-    //       copy: "click copy",
-    //     },
-    //   },
-    // }),
+    copyCodePlugin({
+      locales: {
+        "/": {
+          copied: "复制成功",
+          copy: "点击拷贝",
+        },
+      },
+    }),
   ],
 });
