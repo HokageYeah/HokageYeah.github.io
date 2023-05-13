@@ -5,6 +5,7 @@ import head from "./configs/head";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { commentPlugin } from "vuepress-plugin-comment2";
+import vuepressPluginAnchorRight from "vuepress-plugin-anchor-right";
 
 // debugger;
 console.log(sidebar);
@@ -96,6 +97,14 @@ export default defineUserConfig({
           copy: "点击拷贝",
         },
       },
+    }),
+
+    // 右侧出现目录树
+    vuepressPluginAnchorRight({
+      // 在这里进行插件的配置
+      // 例如设置目录字体颜色和排版
+      color: '#ff0000',
+      layout: "horizontal",
     }),
   ],
 });

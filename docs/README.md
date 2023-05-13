@@ -1,6 +1,7 @@
 ---
 home: true
 title: 首页
+# heroImage: /images/logo.jpg
 actions:
   - text: 笔记跳转
     link: /ES6/01ECMAScript.html
@@ -8,6 +9,7 @@ actions:
   - text: 项目简介
     link: guide/configuration.html
     type: secondary
+    
 features:
   - title: 标题1
     details: 简介1test
@@ -15,14 +17,9 @@ features:
     details: 简介2test
   - title: 标题3
     details: 简介3test
-  - title: 标题4
-    details: 简介4test
-  - title: 标题5
-    details: 简介5test
-  - title: 标题6
-    details: 简介6test
 footer: MIT Licensed | Copyright © 2023-present HokageYeah
 ---
+
 
 ### 像数 1, 2, 3 一样容易
 

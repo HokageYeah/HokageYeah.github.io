@@ -6,6 +6,7 @@ const sidebar: SidebarConfig = {
   "/guide/": [
     {
       text: "指南",
+      collapsible: true, //可折叠的侧边栏
       children: [
         "/guide/getting-started.md",
         "/guide/configuration.md",
@@ -16,6 +17,7 @@ const sidebar: SidebarConfig = {
   "/ES6/": [
     {
       text: "ES6笔记",
+      collapsible: true, //可折叠的侧边栏
       children: [
         "/ES6/01ECMAScript.md",
         "/ES6/02ECMAScript.md",
