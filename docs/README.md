@@ -4,24 +4,25 @@ title: 首页
 # heroImage: /images/logo.jpg
 actions:
   - text: 笔记跳转
-    link: /ES6/01ECMAScript.html
+    # link: /ES6/01ECMAScript.html
+    link: /Books/《ES6 教程》笔记/01.ECMAScript 6 简介.html
     type: primary
   - text: 项目简介
-    link: guide/configuration.html
+    link: guide/01.configuration.html
     type: secondary
     
 features:
-  - title: 标题1
-    details: 简介1test
-  - title: 标题2
-    details: 简介2test
-  - title: 标题3
-    details: 简介3test
+  - title: 专业前端
+    details: 熟悉Vue、React、Node、TS、JS、HTML、CSS等单词拼写
+  - title: 动漫爱好者
+    details: 火影、海贼、鬼灭各种角色的书写
+  - title: 专业肥宅
+    details: 喜欢吃各种美食，体重180，身高180
 footer: MIT Licensed | Copyright © 2023-present HokageYeah
 ---
 
 
-### 像数 1, 2, 3 一样容易
+### 项目克隆
 
 ```shell
 git clone https://github.com/HokageYeah/HokageYeah.github.io
