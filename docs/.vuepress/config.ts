@@ -8,8 +8,6 @@ import { commentPlugin } from "vuepress-plugin-comment2";
 import vuepressPluginAnchorRight from "vuepress-plugin-anchor-right";
 
 // debugger;
-console.log(sidebar);
-
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",

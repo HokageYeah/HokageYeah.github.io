@@ -60,7 +60,6 @@ function getDirectory(directoryPath: string) {
 function getFolderSidebar(folderPath: string) {
   const sidebar: any[] = [];
   const filesAry = getDirectory(folderPath);
-  console.log("看看======-------", filesAry);
   filesAry.forEach((element) => {
     const filepath = getFile(folderPath + "/" + element);
     if (!filepath) return [];
@@ -69,7 +68,6 @@ function getFolderSidebar(folderPath: string) {
     });
     sidebar.push({ ...filepath[0], children });
   });
-  console.log("看看文件是什么-------", sidebar);
   return sidebar;
 }
 
