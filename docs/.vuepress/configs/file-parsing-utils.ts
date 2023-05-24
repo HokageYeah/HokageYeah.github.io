@@ -32,7 +32,7 @@ function getFile(pathname: string) {
   return [
     {
       text: pathname,
-      collapsible: true, //可折叠的侧边栏
+      collapsible: true, //可折叠的侧边栏 
       children: mapDir,
     },
   ];
