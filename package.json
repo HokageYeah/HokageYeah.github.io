@@ -17,6 +17,7 @@
     "@vuepress/client": "2.0.0-beta.62",
     "@vuepress/plugin-docsearch": "2.0.0-alpha.1",
     "@vuepress/plugin-search": "2.0.0-beta.62",
+    "@vuepress/utils": "2.0.0-alpha.1",
     "vue": "^3.3.1",
     "vuepress": "2.0.0-beta.62",
     "vuepress-plugin-anchor-right": "0.0.1-beta.18",

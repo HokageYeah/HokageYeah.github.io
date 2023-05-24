@@ -6,6 +6,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { commentPlugin } from "vuepress-plugin-comment2";
 import vuepressPluginAnchorRight from "vuepress-plugin-anchor-right";
+import { path } from "@vuepress/utils";
 
 // debugger;
 export default defineUserConfig({
@@ -39,13 +40,14 @@ export default defineUserConfig({
         contributorsText: "贡献者",
       },
     },
+
     // // 默认主题配置
     // navbar: [
     //   {
     //     text: "首页",
     //     link: "/",
     //   },
-    // ], 
+    // ],
     // sidebar: [
     //   // SidebarItem
     //   {
@@ -64,6 +66,14 @@ export default defineUserConfig({
     //   },
     // ],
   }),
+
+  // 组件重命名，覆盖默认组件
+  alias: {
+    "@theme/ToggleColorModeButton.vue": path.resolve(
+      __dirname,
+      "./components/ToggleColorModeButton.vue"
+    ),
+  },
   plugins: [
     searchPlugin({
       locales: {
@@ -101,7 +111,7 @@ export default defineUserConfig({
     vuepressPluginAnchorRight({
       // 在这里进行插件的配置
       // 例如设置目录字体颜色和排版
-      color: '#ff0000',
+      color: "#ff0000",
       layout: "horizontal",
     }),
   ],
