@@ -19,7 +19,7 @@ exec_project(){
 }
 
 log_check(){
-    # 判断日志路径是否存在
+    # 判断日志路径是否存在1
     if [ -e  $path ]
     then
          echo "日志目录已存在，错误日志将输出到 $log"
