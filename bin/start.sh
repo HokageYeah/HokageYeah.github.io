@@ -25,7 +25,7 @@ exec_project(){
 }
 
 log_check(){
-   # 判断当前路径是bin目录还是项目目录
+   # 判断检测文件（包括目录）是否存在，如果是，则返回 true。
    if [ -e  $path ]
    then
        echo "日志目录已存在，错误日志将输出到 $log"
