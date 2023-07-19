@@ -17,7 +17,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       // lang: 'zh-CN',
-      title: "HokageYeah的笔记",
+      title: "HokageYeah的博客",
       description: "懂得越多，懂得越少",
     },
   },
