@@ -27,7 +27,7 @@ export default defineUserConfig({
     repo: "HokageYeah/HokageYeah.github.io", // 设置 GitHub 仓库的用户名和仓库名
     docsBranch: "master",
     docsDir: "docs", // 设置存放文档源文件的目录路径
-
+    colorMode: "dark",
     locales: {
       "/": {
         // navbar

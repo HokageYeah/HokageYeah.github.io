@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-# heroImage: /images/logo.jpg
+heroImage: /logo/hero.png
 actions:
   - text: 笔记跳转
     # link: /ES6/01ECMAScript.html
